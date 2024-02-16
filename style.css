@@ -1,0 +1,412 @@
+/* This affects the entire website */
+*{
+  text-decoration: none;
+  box-sizing: 0;
+  margin: 0;
+}
+
+body{
+  background-color:white;
+  background-image: url(../img/10.jpg);
+}
+
+
+/* Navbar Styling starts here! */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+
+li a:hover{
+  background-color: white;
+  color: black;
+}
+
+.logo{
+  font-family: 'Great Vibes', cursive;
+  font-size: 25px;
+  color: white;
+  float: left;
+  padding: 10px 14px;
+}
+
+/* The Norway image */
+.heroImg {
+  position: relative;
+  filter: brightness(85%);
+  width: 100%;
+}
+
+.heroText {
+  text-align: start;
+  position: absolute;
+  top: 29%;
+  left: 19%;
+  margin-right: 450px;
+  color: white;
+}
+
+.heroh1Tag{
+  margin-bottom: 10px;
+  font-size: 90px;
+}
+
+.heroPTag{
+   margin-bottom: 30px;
+   font-size: 25px;
+}
+
+
+/* Home Content styling starts here */
+
+.titleSection{
+  background-color: white;
+}
+
+.title{
+  font-family: 'Great Vibes', cursive;
+  padding: 50px 50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.contentSection{
+  padding: 80px 100px 100px 100px;
+  background-color: lightblue;
+}
+
+.myself{
+  width: 310px;
+  margin-bottom: 20px;
+  margin-right: 100px;
+  border-radius: 60px;
+  border: solid 5px #37657c;
+}
+
+.article1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
+  padding: 30px 30px;
+}
+
+.articleInfo{
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.btn{
+    background: #37657c;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.btn:hover{
+    background: white;
+    color:black;
+}
+
+.text1{
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.text2{
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+/* Photo Gallery Design */
+
+.photoGallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 50px 50px 50px;
+  background-color: white;
+  margin: 0;
+}
+
+.effect-container {
+  position: relative;
+  width: 50%;
+}
+
+.photos{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  opacity: 1;
+  display: block;
+  transition: transform .2s; /* Animation */
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.effect-container:hover .photos {
+  opacity: 0.3;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.effect-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #053031;
+  font-size: 25px;
+  padding: 16px 10px;
+}
+
+/* Footer */
+
+footer{
+  text-align: center;
+  background-color: #37657c;
+  color: white;
+  padding-top: 10px;
+}
+
+.fa {
+    padding: 25px;
+    font-size: 40px;
+    width: 20px;
+    text-align: center;
+    color: #053031;
+  }
+
+.fa:hover {
+  opacity: 0.3;
+  color: lightblue;
+} 
+
+.copyright{
+  padding-bottom: 10px;
+}
+
+.email{
+  color: white;
+}
+
+.email:hover{
+  color: lightblue;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .heroText {
+      top: 15%;
+      margin-right: 310px;
+  }
+
+  .heroh1Tag{
+    font-size: 30px;
+  }
+
+  .heroPTag{
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 10px;
+}
+
+.article1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myself{
+  margin-right: 50px;
+}
+
+.articleInfo{
+  width: 300px;
+  margin-bottom: 25px;
+  margin-right: 60px;
+}
+.photoGallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+  li a {
+  font-size: 13px;
+}
+.logo{
+  font-size: 18px;
+}
+
+  .heroText {
+      top: 10%;
+      margin-right: 100px;
+  }
+
+  .heroh1Tag{
+    font-size: 20px;
+  }
+
+  .heroPTag{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .btn{
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+.article1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myself{
+  width: 210px;
+  margin-right: 10px;
+
+}
+
+.articleInfo{
+  width: 210px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+.photoGallery{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.photos{
+  width: 200px;
+  height: 200px;
+}
+}
+
+
+
+
+body{
+  background: rgb(245, 244, 241);
+  color:#fff(241, 220, 22);
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+/* .wrapper{
+  margin-top: 50px;
+} */
+
+.wrapper h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  color:lightblue;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: 300 px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: maroon;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: grey;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  background: #171c24;
+  position: fixed;
+  width: 100%;
+  z-index:3;
+}
